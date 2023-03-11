@@ -1,0 +1,82 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sidebar {
+  background-color: #f43f5e;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem;
+  
+  display: grid;
+  align-content: start;
+  gap: 3rem;
+}
+
+.sidebar > div,
+.sidebar > ul {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  align-items: center;
+  gap: 10px 8px;
+}
+
+.sidebar .iconify {
+  justify-self: center;
+}
+.sidebar > ul .iconify {
+  width: 16px;
+  height: 16px;
+}
+
+.content {
+  background-color: #cbd5e1;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+/*temporary styles*/
+.header {
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(35, 35, 35, 0.085);
+  padding: 1rem;
+
+  display: grid;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.header input, label {
+  appearance: none;
+  max-width: 500px;
+  width: 100%;
+}
+
+img {
+  border-radius: 100vh;
+}
+.small-profile-picture {
+  width: 40px;
+}
+.big-profile-picture {
+  width: 60px;
+}
