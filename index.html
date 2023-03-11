@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar__title">
+      <span class="iconify" width="36" data-icon="material-symbols:dashboard"></span>
+      <h2>Dashboard</h2>
+    </div>
+    
+    <ul class="sidebar__user-links">
+      <span class="iconify" data-icon="mdi:home"></span>
+      <li>Home</li>
+
+      <span class="iconify" data-icon="mdi:user-box"></span>
+      <li>Profile</li>
+
+      <span class="iconify" data-icon="mdi:message-reply"></span>
+      <li>Messages</li>
+
+      <span class="iconify" data-icon="mdi:clock"></span>
+      <li>History</li>
+
+
+      <span class="iconify" data-icon="mdi:papers"></span>
+      <li>Tasks</li>
+
+
+      <span class="iconify" data-icon="mdi:people-group"></span>
+      <li>Communities</li>
+    </ul>
+
+    <ul class="sidebar__help-links">
+      <span class="iconify" data-icon="mdi:settings"></span>
+      <li>Settings</li>
+
+      <span class="iconify" data-icon="mdi:help-box"></span>
+      <li>Support</li>
+      
+      <span class="iconify" data-icon="mdi:security"></span>
+      <li>Privacy</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <header class="header">
+      <span class="iconify" width="22" data-icon="mdi:search"></span>
+      <label for="search-bar">
+        <input type="search" name="search-bar" id="search-bar">
+      </label>
+
+      <span class="iconify" data-icon="mdi:bell-ring-outline"></span>
+      <img class="small-profile-picture" src="profile-picture.jpg" alt="Profile Picture">
+      <p>Name Example</p>
+
+      <img class="big-profile-picture" src="profile-picture.jpg" alt="Profile Picture">
+      <div>
+        <p>Hi there,</p>
+        <p>Name Example (@example)</p>
+      </div>
+
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
+    </header>
+    <main class="main">
+
+    </main>
+  </div>
+</body>
+<script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</html>
