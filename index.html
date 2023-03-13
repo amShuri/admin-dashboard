@@ -11,7 +11,7 @@
   <title>Admin Dashboard</title>
 </head>
 <body>
-  <div class="sidebar">
+  <nav class="sidebar">
     <div class="sidebar__title">
       <span class="iconify" width="36" data-icon="material-symbols:dashboard"></span>
       <h2>Dashboard</h2>
@@ -19,63 +19,68 @@
     
     <ul class="sidebar__user-links">
       <span class="iconify" data-icon="mdi:home"></span>
-      <li>Home</li>
+      <li><a href="#">Home</a></li>
 
       <span class="iconify" data-icon="mdi:user-box"></span>
-      <li>Profile</li>
+      <li><a href="#">Profile</a></li>
 
       <span class="iconify" data-icon="mdi:message-reply"></span>
-      <li>Messages</li>
+      <li><a href="#">Messages</a></li>
 
       <span class="iconify" data-icon="mdi:clock"></span>
-      <li>History</li>
-
+      <li><a href="#">History</a></li>
 
       <span class="iconify" data-icon="mdi:papers"></span>
-      <li>Tasks</li>
-
+      <li><a href="#">Tasks</a></li>
 
       <span class="iconify" data-icon="mdi:people-group"></span>
-      <li>Communities</li>
+      <li><a href="#">Communities</a></li>
     </ul>
 
     <ul class="sidebar__help-links">
       <span class="iconify" data-icon="mdi:settings"></span>
-      <li>Settings</li>
+      <li><a href="#">Settings</a></li>
 
       <span class="iconify" data-icon="mdi:help-box"></span>
-      <li>Support</li>
+      <li><a href="#">Support</a></li>
       
       <span class="iconify" data-icon="mdi:security"></span>
-      <li>Privacy</li>
+      <li><a href="#">Privacy</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="content">
-    <header class="header">
-      <span class="iconify" width="22" data-icon="mdi:search"></span>
+  <header class="container">
+    <div class="header__search-bar">
+      <span class="iconify" width="26" data-icon="mdi:search"></span>
       <label for="search-bar">
         <input type="search" name="search-bar" id="search-bar">
       </label>
+    </div>
 
-      <span class="iconify" data-icon="mdi:bell-ring-outline"></span>
+    <div class="header__user-settings">
+      <span class="iconify" width="24" data-icon="mdi:bell-ring-outline"></span>
       <img class="small-profile-picture" src="profile-picture.jpg" alt="Profile Picture">
       <p>Name Example</p>
+    </div>
 
+    <div class="header__user-profile">
       <img class="big-profile-picture" src="profile-picture.jpg" alt="Profile Picture">
       <div>
         <p>Hi there,</p>
         <p>Name Example (@example)</p>
       </div>
+    </div>
 
+    <div class="header__buttons">
       <button>New</button>
       <button>Upload</button>
       <button>Share</button>
-    </header>
-    <main class="main">
+    </div>
+  </header>
 
-    </main>
-  </div>
+  <main class="container">
+  </main>
+
 </body>
 <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </html>
