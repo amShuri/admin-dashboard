@@ -128,7 +128,7 @@ input[type="search"] {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 0 1.5rem;
+  padding: 0 0.5rem;
 }
 
 .header .user-greeting {
@@ -201,6 +201,9 @@ input[type="search"] {
   gap: 15px;
 }
 
+.last-row a {
+  color: #000;
+}
 .last-row h2 {
   margin-top: 15px;
 }
@@ -241,3 +244,12 @@ input[type="search"] {
   font-size: 14px;
 }
 /* Text colors end */
+
+.freepik {
+  border-bottom: 1px solid #fff;
+}
+.freepik-images:hover,
+.freepik-images:hover .freepik {
+  color: #000;
+  border-color: #000;
+}
