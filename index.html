@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
   <title>Admin Dashboard</title>
 </head>
 <body>
@@ -51,10 +52,8 @@
 
   <header class="header container">
     <div class="header__search-bar">
-      <span class="iconify" width="26" data-icon="mdi:search"></span>
-      <label for="search-bar">
-        <input type="search" name="search-bar" id="search-bar">
-      </label>
+      <span class="iconify search-icon" width="26" data-icon="mdi:search"></span>
+      <input type="search" name="search-bar" id="search-bar">
     </div>
 
     <div class="header__user-settings">
@@ -66,8 +65,8 @@
     <div class="header__user-profile">
       <img class="big-profile-picture" src="profile-picture.jpg" alt="Profile Picture">
       <div>
-        <p>Hi there,</p>
-        <p>Name Example (@example)</p>
+        <p class="user-greeting">Hi there,</p>
+        <p class="user-name">Name Example (@example)</p>
       </div>
     </div>
 
@@ -78,9 +77,151 @@
     </div>
   </header>
 
-  <main class="container">
-  </main>
+  <main class="main container">
+    <div class="main__first-column">
+      
+      <h2>Your Projects</h2>
+      <div class="first-column__projects">
+        <div class="project-container">
+          <div class="title">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto voluptate laborum repudiandae quae optio suscipit error, porro quos.
+            </p>
+          </div>
+          <div class="project-icons">
+            <span class="iconify" width="28" data-icon="mdi:star-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:eye-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:share-variant-outline"></span>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="title">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque unde sint ratione doloremque laudantium doloribus necessitatibus? Et atque, non veniam cupiditate facere a quia.
+            </p>
+          </div>
+          <div class="project-icons">
+            <span class="iconify" width="28" data-icon="mdi:star-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:eye-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:share-variant-outline"></span>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="title">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed labore ipsam inventore accusantium temporibus eligendi quidem itaque, blanditiis quas?
+            </p>
+          </div>
+          <div class="project-icons">
+            <span class="iconify" width="28" data-icon="mdi:star-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:eye-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:share-variant-outline"></span>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="title">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem similique, maxime unde quae consectetur corrupti cum itaque. Nobis tenetur non saepe, at doloribus iste explicabo ratione.
+            </p>
+          </div>
+          <div class="project-icons">
+            <span class="iconify" width="28" data-icon="mdi:star-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:eye-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:share-variant-outline"></span>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="title">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nemo enim voluptate, architecto beatae, consequuntur praesentium dolore veritatis voluptas, hic nobis.
+            </p>
+          </div>
+          <div class="project-icons">
+            <span class="iconify" width="28" data-icon="mdi:star-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:eye-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:share-variant-outline"></span>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="title">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi quis voluptates tempore reprehenderit totam enim ut eius omnis aliquam impedit facere architecto saepe, repellat reiciendis dignissimos asperiores.
+            </p>
+          </div>
+          <div class="project-icons">
+            <span class="iconify" width="28" data-icon="mdi:star-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:eye-plus-outline"></span>
+            <span class="iconify" width="28" data-icon="mdi:share-variant-outline"></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="main__sidebar">
+      <div class="second-column">
+        <h2>Announcements</h2>
+        <div class="main__sidebar-announcements">
+          <div class="post">
+            <h3>Site Maintenance</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur illo tempore nesciunt consequatur debitis quo!</p>
+          </div>
+
+          <hr>
+
+          <div class="post">
+            <h3>Community Share Day</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur illo tempore nesciunt consequatur debitis quo!</p>
+          </div>
+
+          <hr>
+          
+          <div class="post">
+            <h3>Update Privacy Policy</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur illo tempore nesciunt consequatur debitis quo!</p>
+          </div>
+        </div>
+      </div>
+      <div class="last-row">
+        <h2>Trending</h2>
+        <div class="main__sidebar-trending">
+          <div class="post">
+            <img src="profile-picture.jpg" alt="">
+            <div>
+              <p>@tengan</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="profile-picture.jpg" alt="">
+            <div>
+              <p>@morgan</p>
+              <p class="trending-name">Super Cool Project</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="profile-picture.jpg" alt="">
+            <div>
+              <p>@kendall</p>
+              <p class="trending-name">Life Changing App</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="profile-picture.jpg" alt="">
+            <div>
+              <p>@alex</p>
+              <p class="trending-name">No Traffic Maker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </html>
